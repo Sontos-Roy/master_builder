@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+}
+html, body{
+    overflow-y: auto;
+}
+
+
+:root{
+    /* font sizes  */
+    --font-18: 18px;
+    --font-17: 17px;
+    --font-15: 15px;
+    --font-14: 14px;
+    --font-13: 13px;
+    --font-12: 12px;
+
+    /* colors  */
+    --black: #3c3c3c;
+    --white: rgb(247, 247, 247);
+}
+.font-lg{
+    font-size: 50px;
+}
+.font-18{
+    font-size: var(--font-18);
+}
+.font-17{
+    font-size: var(--font-17);
+}
+.font-15{
+    font-size: var(--font-15);
+}
+.font-14{
+    font-size: var(--font-14);
+}
+.font-13{
+    font-size: var(--font-13);
+}
+.font-12{
+    font-size: var(--font-12);
+}
+.bold-9{
+    font-weight: 900;
+}
+.bold-7{
+    font-weight: 700;
+}
+.bold-5{
+    font-weight: 500;
+}
+.bold-3{
+    font-weight: 300;
+}
+.ls-2{
+    letter-spacing: 2px;
+}
+.bg-nav{
+    background-color: #0497db;
+}
+.serif{
+    font-family: serif;
+}
+
+
+.btn-hover-warning:hover{
+    background-color: #ffc107;
+    border-color: #ffc107;
+    transition: 0.3s;
+    color: black;
+}
+.btn-hover-dark:hover{
+    background-color: black;
+    border-color: black;
+    transition: 0.3s;
+    color: white;
+}
+.modal{
+    z-index: 9999;
+}
+.main-wapper{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+header{
+    height: 80px;
+}
+.navbar{
+    width: 100%;
+    position: fixed;
+    z-index: 1090;
+    top: 0;
+    animation: navbar 0.5s;
+}
+.navbar .navbar-nav .nav-item .nav-link{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: white;
+    transition: 0.3s;
+}
+.navbar .navbar-nav .nav-item:hover .nav-link{
+    color: rgb(207, 207, 207);
+}
+
+
+/* cover section  */
+.bg-cover{
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+}
+
+.cover-info .cover-title{
+    padding-top: 250px;
+    font-weight: bold;
+    color: white;
+    font-family: serif;
+    letter-spacing: 5px;
+    font-size: 8vh;
+}
+.cover-row div .box{
+    background-color: rgb(242, 242, 255);
+    box-shadow: 1px 1px 8px gray;
+    border-radius: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-top: 20px;
+}
+.cover-row div .box .box-bar{
+    background: rgb(91, 91, 253);
+    height: 5px;
+    border-radius: 10px;
+    visibility: visible;
+}
+.cover-row div .box:focus .box-bar{
+    visibility: hidden;
+}
+/* cover section  */
+
+/* feature section  */
+.featured-pro{
+    position: relative;
+    background: linear-gradient(transparent 50%, rgb(225, 225, 252) 50%);
+}
+
+.feature-title{
+    text-align: center;
+}
+.feature-title h1{
+    font-family: serif;
+    font-weight: bold;
+    font-size: 55px;
+    display: inline;
+    padding: 5px 20px;
+    background: linear-gradient(rgb(213, 213, 253) 50%, transparent 50%);
+}
+
+.property{
+    border: gray;
+    box-shadow: 1px 1px 5px gray;
+    background-color: rgb(255, 255, 255);
+    overflow: initial;
+}
+.pro-image{
+    width: 100%;
+    overflow: hidden;
+    cursor: pointer;
+}
+.pro-image img{
+    transform: scale(1) !important;
+    transition: 0.1s;
+}
+.pro-image:hover img{
+    transform: scale(1.5) !important;
+}
+
+.Pro-address{
+    margin-top: 20px;
+    margin-left: 10px;
+    width: auto;
+    display: inline-block;
+    background-color: rgb(112, 177, 252);
+}
+.pro-name{
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.btn{
+    /* z-index: 50; */
+    margin-bottom: 30px;
+}
+
+/* feature section  */
+
+
+/* quat section  */
+.quat-section .container .qout-img{
+    border-radius: 50%;
+    overflow: hidden;
+}
+.quat{
+    font-size: 50px;
+}
+.quat-name{
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+}
+.quat-designation{
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+/* quat section  */
+
+.gradient-after{
+    background: linear-gradient(rgba(166, 222, 255, 0.384) 50%, transparent 50%);
+    display: inline;
+    padding: 5px;
+}
+.overflow{
+    overflow: hidden;
+}
+
+.home-contact * input{
+    border: none;
+    border-bottom: 2px solid black;
+    width: 100%;
+    outline: none;
+}
+.home-contact * .home-contact-label{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+/* footer section  */
+
+.contact-info{
+    background-color: #d6d6d6;
+}
+.address-info{
+    background-color: #6d6d6d;
+    color: white;
+}
+.f-icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background-color: rgb(105, 105, 105);
+    color: white;
+    font-size: 20px;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.copyright{
+    background: #0497db;
+}
+/* footer section  */
